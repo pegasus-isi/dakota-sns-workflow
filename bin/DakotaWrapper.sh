@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 set -e
 
@@ -38,8 +38,8 @@ elif [ -z "$stdoutFile" ]; then
    stdoutFile="${outputFile%%.*}.stdout"
 fi
 
-export PATH="/opt/dakota/6.6.0/bin:/opt/dakota/6.6.0/test:/opt/Mantid/bin:$PATH"
-export PYTHONPATH="/opt/dakota/6.6.0/share/dakota/Python:/opt/Mantid/bin:$PYTHONPATH"
+export PATH="/opt/dakota/6.7.0/bin:/opt/dakota/6.7.0/test:/opt/Mantid/bin:$PATH"
+export PYTHONPATH="/opt/dakota/6.7.0/share/dakota/Python:/opt/Mantid/bin:$PYTHONPATH"
 
 dakota -i $inputFile -o $outputFile > $stdoutFile
 
