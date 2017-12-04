@@ -1,4 +1,4 @@
-submit/ 
-scratch/ 
-output/
+submit/**/
+scratch/**/
+output/**/
 DakotaSNS.dax
